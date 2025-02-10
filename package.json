@@ -10,6 +10,7 @@
 		"package-web": "webpack --mode production --config ./build/web-extension.webpack.config.js",
 		"watch-web": "webpack --watch --config ./build/web-extension.webpack.config.js"
 	},
+	"l10n": "./l10n",
 	"contributes": {
 		"commands": [
 			{
@@ -541,7 +542,7 @@
 	},
 	"devDependencies": {
 		"@types/glob": "8.1.0",
-		"@types/node": "22.13.0",
+		"@types/node": "22.13.1",
 		"@types/relaxed-json": "1.0.4",
 		"glob": "11.0.1",
 		"ts-loader": "9.5.2"
@@ -551,6 +552,5 @@
 	"extensionKind": [
 		"ui",
 		"workspace"
-	],
-	"l10n": "./l10n"
+	]
 }
