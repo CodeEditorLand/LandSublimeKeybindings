@@ -1,8 +1,16 @@
 {
-	"activationEvents": [
-		"onStartupFinished"
-	],
+	"name": "sublime-keybindings",
+	"displayName": "Sublime Text Keymap and Settings Importer",
+	"description": "Import Sublime Text settings and keybindings into VS Code.",
+	"main": "./dist/extension.js",
 	"browser": "./dist/web/extension.js",
+	"scripts": {
+		"compile": "webpack --config ./build/node-extension.webpack.config.js",
+		"compile-web": "webpack --config ./build/web-extension.webpack.config.js",
+		"package-web": "webpack --mode production --config ./build/web-extension.webpack.config.js",
+		"watch-web": "webpack --watch --config ./build/web-extension.webpack.config.js"
+	},
+	"l10n": "./l10n",
 	"contributes": {
 		"commands": [
 			{
@@ -526,31 +534,23 @@
 			]
 		}
 	},
+	"activationEvents": [
+		"onStartupFinished"
+	],
 	"dependencies": {
 		"relaxed-json": "1.0.3"
 	},
-	"description": "Import Sublime Text settings and keybindings into VS Code.",
 	"devDependencies": {
 		"@types/glob": "8.1.0",
-		"@types/node": "22.13.9",
+		"@types/node": "22.13.10",
 		"@types/relaxed-json": "1.0.4",
 		"glob": "11.0.1",
 		"ts-loader": "9.5.2"
 	},
-	"displayName": "Sublime Text Keymap and Settings Importer",
+	"icon": "sublime_keyboard_with_padding.png",
+	"preview": false,
 	"extensionKind": [
 		"ui",
 		"workspace"
-	],
-	"icon": "sublime_keyboard_with_padding.png",
-	"l10n": "./l10n",
-	"main": "./dist/extension.js",
-	"name": "sublime-keybindings",
-	"preview": false,
-	"scripts": {
-		"compile": "webpack --config ./build/node-extension.webpack.config.js",
-		"compile-web": "webpack --config ./build/web-extension.webpack.config.js",
-		"package-web": "webpack --mode production --config ./build/web-extension.webpack.config.js",
-		"watch-web": "webpack --watch --config ./build/web-extension.webpack.config.js"
-	}
+	]
 }
