@@ -564,7 +564,7 @@
 		"relaxed-json": "1.0.3"
 	},
 	"devDependencies": {
-		"@playform/build": "0.2.2",
+		"@playform/build": "0.2.3",
 		"@types/glob": "8.1.0",
 		"@types/node": "22.14.0",
 		"@types/relaxed-json": "1.0.4",
