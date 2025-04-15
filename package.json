@@ -1,7 +1,29 @@
 {
 	"name": "sublime-keybindings",
 	"displayName": "Sublime Text Keymap and Settings Importer",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Import Sublime Text settings and keybindings into VS Code.",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandSublimeKeybindings#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandSublimeKeybindings/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandSublimeKeybindings.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "./dist/extension.js",
 	"browser": "./dist/web/extension.js",
 	"scripts": {
@@ -548,6 +570,9 @@
 		"@types/relaxed-json": "1.0.4",
 		"glob": "11.0.1",
 		"ts-loader": "9.5.2"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"icon": "sublime_keyboard_with_padding.png",
 	"preview": false,
